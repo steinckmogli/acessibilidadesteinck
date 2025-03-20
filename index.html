@@ -69,3 +69,35 @@
     </footer>
 </body>
 </html>
+ <!-- Seção de Contato -->
+ <section id="contato">
+    <h2>Entre em Contato Conosco</h2>
+    <p>Se você tem dúvidas ou quer saber mais sobre as nossas casas fluviais, preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+    <form action="enviar-mensagem.php" method="POST">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu email">
+        </div>
+        <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem" rows="5"></textarea>
+        </div>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Casas Fluviais. Todos os direitos reservados.</p>
+    <p><a href="mailto:contato@casasfluviais.com">contato@casasfluviais.com</a></p>
+</footer>
+
+<!-- Incluindo o script ao final do corpo do HTML -->
+<script defer src="scripts.js"></script>
+</body>
+</html>

@@ -75,3 +75,36 @@ footer a {
     color: white;
     text-decoration: none;
 }
+/* Estilo global para imagens */
+img {
+    width: 90%; /* A largura das imagens será 90% da largura do seu contêiner */
+    max-width: 400px; /* Limita o tamanho máximo da imagem a 400px */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+    margin: 10px auto; /* Espaçamento entre as imagens e centralização */
+    display: block; /* Garante que as imagens sejam exibidas como blocos, ajudando na centralização */
+}
+
+/* Estilos específicos para a galeria */
+.gallery img {
+    width: 80%; /* Ajusta a largura das imagens da galeria para 80% do contêiner */
+    max-width: 350px; /* Limita o tamanho máximo das imagens na galeria */
+    height: auto; /* Mantém a proporção das imagens */
+    margin: 10px auto; /* Garante espaçamento e centralização entre as imagens */
+}
+
+/* Para a seção de contato, se houver alguma imagem */
+#contato img {
+    width: 70%; /* Ajusta para 70% da largura do contêiner */
+    max-width: 350px; /* Limita a largura máxima a 350px */
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    img {
+        width: 100%; /* Quando a tela for pequena, as imagens ocupam 100% da largura */
+        max-width: 300px; /* Ajusta a largura máxima */
+    }
+}
